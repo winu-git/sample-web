@@ -1,765 +1,955 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title> Winu Portfolio </title>
-
+  <title>Winu Portfolio | Cloud & DevOps Engineer</title>
 
   <link rel="icon" type="image/png" href="images/title-logo-3.jpg">
   <link rel="stylesheet" href="style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  </head>
-  <body id="top">
-  
+</head>
+<body id="top">
+
+  <!-- Dynamic Floating Cloud/DevOps Network -->
   <div class="floating-network">
+    <div class="node" id="n1"><img src="images/aws-logo-1.png" alt="AWS"></div>
+    <div class="node" id="n2"><img src="images/GCP-icon.png" alt="GCP"></div>
+    <div class="node" id="n3"><img src="images/Jenkins.png" alt="Jenkins"></div>
+    <div class="node" id="n4"><img src="images/docker.png" alt="Docker"></div>
+    <div class="node" id="n5"><img src="images/Kubernetes.png" alt="Kubernetes"></div>
+    <div class="node" id="n6"><img src="images/git.png" alt="Git"></div>
+    <div class="node" id="n7"><img src="images/github-white-icon.webp" alt="GitHub"></div>
+    <div class="node" id="n8"><img src="images/Terraform.png" alt="Terraform"></div>
 
-  <div class="node" id="n1">
-  <img src="images/aws-logo-1.png">
+    <svg class="network-lines">
+      <line id="l1"></line>
+      <line id="l2"></line>
+      <line id="l3"></line>
+      <line id="l4"></line>
+      <line id="l5"></line>
+      <line id="l6"></line>
+      <line id="l7"></line>
+    </svg>
   </div>
 
-  <div class="node" id="n2">
-  <img src="images/GCP-icon.png">
-  </div>
-
-  <div class="node" id="n3">
-  <img src="images/Jenkins.png">
-  </div>
-
-  <div class="node" id="n4">
-  <img src="images/docker.png">
-  </div>
-
-  <div class="node" id="n5">
-  <img src="images/Kubernetes.png">
-  </div>
-
-  <div class="node" id="n6">
-  <img src="images/git.png">
-  </div>
-
-  <div class="node" id="n7">
-  <img src="images/github-white-icon.webp">
-  </div>
-
-  <div class="node" id="n8">
-  <img src="images/Terraform.png">
-  </div>
-
-  <svg class="network-lines">
-  <line id="l1"></line>
-  <line id="l2"></line>
-  <line id="l3"></line>
-  <line id="l4"></line>
-  <line id="l5"></line>
-  <line id="l6"></line>
-  <line id="l7"></line>
-  <line id="l8"></line>
-  </svg>
-  </div>
-
+  <!-- Intro Boot Screen -->
   <div class="intro-screen" id="intro">
     <div class="loader-wrapper">
+      <div class="loader-text">
+        <span class="terminal-prompt">winu@cloud:~$</span>
+        <span id="loaderTyping"></span>
+        <span class="loader-cursor">█</span>
+      </div>
 
-        <div class="loader-text">
-            <span class="terminal-prompt">winu@cloud:~$</span>
-            <span id="loaderTyping"></span>
-            <span class="loader-cursor">█</span>
-        </div>
+      <div class="loading-text">Initializing Cloud Infrastructure...</div>
 
-        <div class="loading-text">Loading Portfolio...</div>
+      <div class="thin-progress">
+        <span class="thin-fill"></span>
+      </div>
 
-        <div class="thin-progress">
-            <span class="thin-fill"></span>
-        </div>
-
+      <button type="button" class="skip-intro-btn" id="skipIntroBtn">Skip Intro →</button>
     </div>
-</div>
+  </div>
 
-<header>
-<div class="logo">
-<svg id="headerLogoSvg" class="header-logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="headerWGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3fd0ff"/>
-      <stop offset="100%" stop-color="#0090e0"/>
-    </linearGradient>
-  </defs>
+  <!-- Sticky Navigation Header -->
+  <header>
+    <a href="#top" class="logo">
+      <svg id="headerLogoSvg" class="header-logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="headerWGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3fd0ff"/>
+            <stop offset="100%" stop-color="#0090e0"/>
+          </linearGradient>
+        </defs>
+        <path id="headerCloudPath" d="
+          M60 128
+          C42 128 30 115 30 100
+          C30 86 41 75 55 73
+          C57 52 75 36 97 36
+          C117 36 134 49 138 68
+          C156 68 170 82 170 99
+          C170 116 156 129 140 129
+          Z"
+          fill="none" stroke="#ffffff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+        <path id="headerWPath" d="
+          M80 75
+          L88 108
+          L100 86
+          L112 108
+          L120 75"
+          fill="none" stroke="url(#headerWGrad)" stroke-width="10"
+          stroke-linecap="round" stroke-linejoin="round"
+          pathLength="300"/>
+      </svg>
+      <span>#myportfolio</span>
+    </a>
 
-  <path id="headerCloudPath" d="
-    M60 128
-    C42 128 30 115 30 100
-    C30 86 41 75 55 73
-    C57 52 75 36 97 36
-    C117 36 134 49 138 68
-    C156 68 170 82 170 99
-    C170 116 156 129 140 129
-    Z"
-    fill="none" stroke="#ffffff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
-  <path id="headerWPath" d="
-    M80 75
-    L88 108
-    L100 86
-    L112 108
-    L120 75"
-    fill="none" stroke="url(#headerWGrad)" stroke-width="10"
-    stroke-linecap="round" stroke-linejoin="round"
-    pathLength="300"/>
-</svg>
-<span> #myportfolio </span>
-</div>
-</header>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#tech-stack" class="nav-link">Stack</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <div class="hero-terminal" id="heroTerminal"></div>
-      
-<h1 class="hero-title">
-    <span class="hello-text">Hello, I'm </span>
-    <span class="typing-name"></span>
-</h1>
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>GCP Technical Engineer @ Quadrasystems</span>
+      </div>
 
-      <p class="hero-role"> Cloud & DevOps Engineer | AWS & GCP </p>
+      <h1 class="hero-title">
+        <span class="hello-text">Hello, I'm</span>
+        <span class="typing-name"></span>
+      </h1>
 
-      <p>
+      <p class="hero-role">Cloud &amp; DevOps Engineer | AWS &amp; GCP</p>
+
+      <p class="hero-desc">
         ☁️ Building secure, scalable and reliable cloud solutions with AWS, GCP, Docker, Kubernetes and DevOps Tools.
       </p>
 
       <div class="hero-buttons">
-        <a href="#contact" class="btn"> Reach Me </a>
-
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Reach Me
+        </a>
         <a href="winmani-resume.pdf" class="btn" target="_blank">
           <i class="fas fa-file-alt"></i> Resume
         </a>
       </div>
+
+      <!-- Live CLI Terminal Card -->
+      <div class="hero-terminal-box">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">winu@cloud-prod: ~</span>
+        </div>
+        <div class="hero-terminal" id="heroTerminal"></div>
+      </div>
     </div>
 
     <div class="hero-img">
-      <img src="images/My-image.jpg" alt="Winu Profile Picture" />
+      <div class="img-glow-ring">
+        <img src="images/My-image.jpg" alt="Winmaniraja B Profile Picture" />
+      </div>
     </div>
-
   </section>
 
+  <!-- About Section -->
   <section class="section fade-in" id="about">
-
     <h2>ABOUT ME</h2>
-    <p> ☁️ Aspiring Cloud and DevOps professional with a strong foundation in cloud computing, Linux, networking, automation, and Infrastructure as Code (IaC). Officially Certified in AWS and Google Cloud, with hands-on experience working with AWS, Google Cloud Platform (GCP), Docker, Kubernetes, Terraform, Git, and CI/CD through practical implementations and projects. Focused on designing, automating, and maintaining scalable, secure, and reliable cloud infrastructure using modern DevOps practices. Interested in cloud architecture, infrastructure automation, containerization, CI/CD, and multi-cloud solutions. Continuously exploring emerging technologies across cloud computing, DevOps, automation, and AI, with a focus on building efficient, reliable, and production-ready infrastructure.
+    <div class="about-card spotlight-card">
+      <p>
+        ☁️ Aspiring Cloud and DevOps professional with a strong foundation in cloud computing, Linux, networking, automation, and Infrastructure as Code (IaC). Officially Certified in AWS and Google Cloud, with hands-on experience working with AWS, Google Cloud Platform (GCP), Docker, Kubernetes, Terraform, Git, and CI/CD through practical implementations and projects. Focused on designing, automating, and maintaining scalable, secure, and reliable cloud infrastructure using modern DevOps practices. Interested in cloud architecture, infrastructure automation, containerization, CI/CD, and multi-cloud solutions. Continuously exploring emerging technologies across cloud computing, DevOps, automation, and AI, with a focus on building efficient, reliable, and production-ready infrastructure.
+      </p>
+    </div>
   </section>
 
+  <!-- Tech Stack Section -->
   <section class="section fade-in" id="tech-stack">
-
     <h2>TECH STACK</h2>
 
     <div class="tech-grid">
-      <img src="images/aws-logo-1.png" alt="AWS">
-      <img src="images/GCP-icon.png" alt="GCP-icon">
-      <img src="images/docker.png" alt="Docker">
-      <img src="images/Kubernetes.png" alt="Kubernetes">
-      <img src="images/Jenkins.png" alt="Jenkins">
-      <img src="images/Linux.png" alt="Linux">
-      <img src="images/Terraform.png" alt="Terraform">
-      <img src="images/CI-CD.png" alt="CI/CD">
-      <img src="images/git.png" alt="Git">
-      <img src="images/github-white-icon.webp" alt="GitHub">
-      <img src="images/Prometheus.png" alt="Prometheus">
-      <img src="images/Grafana.png" alt="Grafana">
-      <img src="images/html.png" alt="HTML5">
-      <img src="images/css.png" alt="CSS3">
+      <div class="tech-item spotlight-card">
+        <img src="images/aws-logo-1.png" alt="AWS">
+        <span>AWS</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/GCP-icon.png" alt="Google Cloud">
+        <span>GCP</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/docker.png" alt="Docker">
+        <span>Docker</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Kubernetes.png" alt="Kubernetes">
+        <span>Kubernetes</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Jenkins.png" alt="Jenkins">
+        <span>Jenkins</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Linux.png" alt="Linux">
+        <span>Linux</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Terraform.png" alt="Terraform">
+        <span>Terraform</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/CI-CD.png" alt="CI/CD">
+        <span>CI/CD</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/git.png" alt="Git">
+        <span>Git</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/github-white-icon.webp" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Prometheus.png" alt="Prometheus">
+        <span>Prometheus</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/Grafana.png" alt="Grafana">
+        <span>Grafana</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/html.png" alt="HTML5">
+        <span>HTML5</span>
+      </div>
+      <div class="tech-item spotlight-card">
+        <img src="images/css.png" alt="CSS3">
+        <span>CSS3</span>
+      </div>
     </div>
-
   </section>
 
+  <!-- Technical Skills Section -->
   <section class="section fade-in skills-section" id="skills">
-
-  <div class="skills-heading">
-    <h2>TECHNICAL SKILLS</h2>
-  </div>
-
-  <div class="modern-skills-grid">
-
-    <div class="modern-skill-card">
-
-      <div class="skill-top">
-
-        <div class="cloud-brand aws-brand">
-          <img src="images/aws-logo-1.png" alt="AWS">
-          <h3></h3>
-        </div>
-
-        <div class="brand-divider"></div>
-
-        <div class="cloud-brand gcp-brand">
-          <img src="images/GCP-icon.png" alt="GCP">
-          <h3></h3>
-        </div>
-
-      </div>
-
-      <div class="modern-skill-list">
-
-        <div class="modern-skill-item">
-          <i class="fas fa-microchip"></i>
-          <p><span>Compute:</span> EC2, Lambda, EKS</p>
-        </div>
-
-        <div class="modern-skill-item">
-          <i class="fas fa-database"></i>
-          <p><span>Storage:</span> S3, EBS, EFS, Glacier</p>
-        </div>
-
-        <div class="modern-skill-item">
-          <i class="fas fa-globe"></i>
-          <p><span>Networking:</span> VPC, Route 53, CloudFront</p>
-        </div>
-
-        <div class="modern-skill-item">
-          <i class="fas fa-server"></i>
-          <p><span>Database:</span> RDS, DynamoDB, Aurora</p>
-        </div>
-
-        <div class="modern-skill-item">
-          <i class="fab fa-google"></i>
-          <p>
-            <span>Google Cloud:</span>
-            Compute Engine, Cloud Storage, Cloud SQL, VPC
-          </p>
-        </div>
-
-      </div>
-
+    <div class="skills-heading">
+      <h2>TECHNICAL SKILLS</h2>
     </div>
 
-    <div class="modern-skill-card">
+    <div class="modern-skills-grid">
+      <div class="modern-skill-card spotlight-card">
+        <div class="skill-top">
+          <div class="cloud-brand aws-brand">
+            <img src="images/aws-logo-1.png" alt="AWS">
+            <h3>AWS</h3>
+          </div>
 
-      <div class="devops-header">
+          <div class="brand-divider"></div>
 
-      <div class="devops-infinity"> ∞ </div>
-        <h3>DevOps</h3>
+          <div class="cloud-brand gcp-brand">
+            <img src="images/GCP-icon.png" alt="GCP">
+            <h3>GCP</h3>
+          </div>
+        </div>
 
+        <div class="modern-skill-list">
+          <div class="modern-skill-item">
+            <i class="fas fa-microchip"></i>
+            <p><span>Compute:</span> EC2, Lambda, EKS</p>
+          </div>
+
+          <div class="modern-skill-item">
+            <i class="fas fa-database"></i>
+            <p><span>Storage:</span> S3, EBS, EFS, Glacier</p>
+          </div>
+
+          <div class="modern-skill-item">
+            <i class="fas fa-globe"></i>
+            <p><span>Networking:</span> VPC, Route 53, CloudFront</p>
+          </div>
+
+          <div class="modern-skill-item">
+            <i class="fas fa-server"></i>
+            <p><span>Database:</span> RDS, DynamoDB, Aurora</p>
+          </div>
+
+          <div class="modern-skill-item">
+            <i class="fab fa-google"></i>
+            <p><span>Google Cloud:</span> Compute Engine, Cloud Storage, Cloud SQL, VPC</p>
+          </div>
+        </div>
       </div>
 
-      <div class="modern-skill-list">
-
-        <div class="modern-skill-item">
-          <i class="fas fa-tools"></i>
-          <p><span>Tools:</span> Git, Maven </p>
+      <div class="modern-skill-card spotlight-card">
+        <div class="devops-header">
+          <div class="devops-infinity">∞</div>
+          <h3>DevOps</h3>
         </div>
 
-        <div class="modern-skill-item">
-          <i class="fab fa-docker"></i>
-          <p><span>Containers:</span> Docker, Kubernetes</p>
-        </div>
+        <div class="modern-skill-list">
+          <div class="modern-skill-item">
+            <i class="fas fa-tools"></i>
+            <p><span>Tools:</span> Git, Maven</p>
+          </div>
 
-        <div class="modern-skill-item">
-          <i class="fas fa-code"></i>
-          <p><span>Infrastructure:</span> Terraform, Ansible</p>
-        </div>
+          <div class="modern-skill-item">
+            <i class="fab fa-docker"></i>
+            <p><span>Containers:</span> Docker, Kubernetes</p>
+          </div>
 
-        <div class="modern-skill-item">
-          <i class="fas fa-infinity"></i>
-          <p><span>CI/CD:</span> Jenkins, GitHub</p>
-        </div>
+          <div class="modern-skill-item">
+            <i class="fas fa-code"></i>
+            <p><span>Infrastructure:</span> Terraform, Ansible</p>
+          </div>
 
+          <div class="modern-skill-item">
+            <i class="fas fa-infinity"></i>
+            <p><span>CI/CD:</span> Jenkins, GitHub</p>
+          </div>
+        </div>
       </div>
-
     </div>
+  </section>
 
-  </div>
-
-</section>
-
+  <!-- Projects Section -->
   <section class="section fade-in" id="projects">
-
     <h2>PROJECTS</h2>
 
     <div class="projects-container">
-
-      <div class="project-card fade-in">
-
+      <div class="project-card spotlight-card fade-in">
         <div class="project-img">
           <img src="images/travel-project.png" alt="Three Tier Website">
         </div>
 
         <div class="project-content">
-
           <h3>Three-Tier Movie Booking Website</h3>
-
           <p>
-            Deployed a secure and scalable 3-tier architecture using EC2,
-            RDS and VPC. Configured IAM, Security Groups and integrated
-            AWS SES for automated email confirmations.
+            Deployed a secure and scalable 3-tier architecture using EC2, RDS and VPC. Configured IAM, Security Groups and integrated AWS SES for automated email confirmations.
           </p>
 
-          <a href="https://github.com/winu-git/3-tier-travel-website.git" target="_blank" class="btn">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
+          <div class="tech-tags">
+            <span>AWS EC2</span>
+            <span>RDS</span>
+            <span>VPC</span>
+            <span>IAM</span>
+            <span>AWS SES</span>
+          </div>
 
+          <div class="project-actions">
+            <a href="https://github.com/winu-git/3-tier-travel-website.git" target="_blank" class="btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <button type="button" class="btn btn-outline arch-btn" data-project="three-tier">
+              <i class="fas fa-project-diagram"></i> Architecture
+            </button>
+          </div>
         </div>
-
       </div>
 
-      <div class="project-card fade-in">
-
+      <div class="project-card spotlight-card fade-in">
         <div class="project-img">
           <img src="images/winuAI.png" alt="AI Chatbot">
         </div>
 
         <div class="project-content">
-
           <h3>AI Chatbot with Disaster Recovery on AWS</h3>
-
           <p>
-            Built an AI-powered chatbot with disaster recovery architecture.
-            Deployed across multiple AWS regions using EC2, VPC and RDS
-            for high availability and reliability.
+            Built an AI-powered chatbot with disaster recovery architecture. Deployed across multiple AWS regions using EC2, VPC and RDS for high availability and reliability.
           </p>
 
-          <a href="https://github.com/winu-git/WinuAI-Bot.git" target="_blank" class="btn">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
+          <div class="tech-tags">
+            <span>Multi-Region AWS</span>
+            <span>EC2</span>
+            <span>RDS</span>
+            <span>VPC</span>
+            <span>Disaster Recovery</span>
+          </div>
 
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="section fade-in" id="training">
-
-    <h2>TRAINING & EDUCATION</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item experience-card">
-
-  <div class="exp-logo">
-    <img src="images/Fita-logo.png" alt="FITA Academylogo">
-  </div>
-
-  <div class="timeline-content">
-      <h3>AWS & DEVOPS </h3>
-      <p>
-        FITA Academy | 2025
-      </p>
-        <p>  
-          • Gained hands-on experience with Amazon Web Services including EC2, S3, VPC, RDS, IAM through real-time projects and infrastructure deployment tasks.
-        </p>
-        <p>
-          • Worked with DevOps tools such as Jenkins, Docker, Kubernetes, Git, GitHub, to automate application deployemnt, containerization, CI/CD pipelines, and infrastructure management.
-        </p> 
-        <p>       
-          • Implemented cloud monitoring, configuration management, and deployment automation practices to improve scalability, system reliability, and operational efficiency.
-        </p>
+          <div class="project-actions">
+            <a href="https://github.com/winu-git/WinuAI-Bot.git" target="_blank" class="btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <button type="button" class="btn btn-outline arch-btn" data-project="ai-dr">
+              <i class="fas fa-project-diagram"></i> Architecture
+            </button>
+          </div>
         </div>
       </div>
-
-      <div class="timeline-item experience-card">
-
-  <div class="exp-logo">
-    <img src="images/NGP-logo.png" alt="NGP College Logo">
-  </div>
-
-  <div class="timeline-content">
-      <h3>B.Sc Information Technology </h3>
-      <p>
-          Dr. N.G.P Arts and Science College, Coimbatore | 2022 - 2025
-      <p>
-          • Gained foundational and practical knowledge in web development using HTML and CSS, with the ability to build responsive and structured web pages.
-      </p>
-      <p>
-          • Developed understanding of machine learning algorithms including Linear Regression, Decision Trees, and XGBoost, with exposure to model building and evaluation techniques.
-      </p>
-      <p>
-          • Acquired basic knowledge of databases, including fundamental concepts of data storage, retrieval, and structured query operations (SQL fundamentals)
-      </p>
-      </p>
-      </p>
-      </div>
-      </div>
-
     </div>
-
   </section>
 
-      <section class="section fade-in" id="experience">
-
+  <!-- Experience Section -->
+  <section class="section fade-in" id="experience">
     <h2>EXPERIENCE</h2>
 
-    <div class="timeline">
-      <div class="timeline-item experience-card">
+    <div class="timeline vertical-timeline">
+      <div class="timeline-item experience-card spotlight-card">
+        <span class="timeline-dot"></span>
         <div class="exp-logo">
           <img src="images/quadra.png" alt="Quadrasystems.net Logo">
         </div>
 
         <div class="timeline-content">
-        <h3> GCP Technical Engineer | Google SBU</h3>
-
-        <p> Quadrasystems.net India Pvt Ltd | 2026 - Present</p>
-        <p>
-          • Monitoring and managed cloud infrastructure services on Google Cloud including Compute Engine, Cloud Storage, VPC, GKE and IAM.
-        <p>
-          • Worked with Billing & Budget calculation, monitoring and logging tools such as Cloud Monitoring and Cloud Logging for troubleshooting system alerts and performance issues to ensure high availability.
-        </p>
+          <div class="timeline-header">
+            <h3>GCP Technical Engineer | Google SBU</h3>
+            <span class="timeline-badge">2026 - Present</span>
+          </div>
+          <p class="company-name">Quadrasystems.net India Pvt Ltd</p>
+          <ul class="timeline-bullets">
+            <li>Monitoring and managing cloud infrastructure services on Google Cloud including Compute Engine, Cloud Storage, VPC, GKE and IAM.</li>
+            <li>Worked with Billing &amp; Budget calculation, monitoring and logging tools such as Cloud Monitoring and Cloud Logging for troubleshooting system alerts and performance issues to ensure high availability.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-<section class="section fade-in" id="certifications">
+  <!-- Training & Education Section -->
+  <section class="section fade-in" id="training">
+    <h2>TRAINING &amp; EDUCATION</h2>
 
-  <h2>CERTIFICATIONS</h2>
+    <div class="timeline vertical-timeline">
+      <div class="timeline-item experience-card spotlight-card">
+        <span class="timeline-dot"></span>
+        <div class="exp-logo">
+          <img src="images/Fita-logo.png" alt="FITA Academy Logo">
+        </div>
 
-  <div class="certifications-container">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>AWS &amp; DEVOPS</h3>
+            <span class="timeline-badge">2025</span>
+          </div>
+          <p class="company-name">FITA Academy</p>
+          <ul class="timeline-bullets">
+            <li>Gained hands-on experience with Amazon Web Services including EC2, S3, VPC, RDS, IAM through real-time projects and infrastructure deployment tasks.</li>
+            <li>Worked with DevOps tools such as Jenkins, Docker, Kubernetes, Git, GitHub, to automate application deployment, containerization, CI/CD pipelines, and infrastructure management.</li>
+            <li>Implemented cloud monitoring, configuration management, and deployment automation practices to improve scalability, system reliability, and operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="certificate-image">
-      <img src="images/aws-badge.png" alt="AWS Certified Cloud Practitioner Badge" class="badge-img">
+      <div class="timeline-item experience-card spotlight-card">
+        <span class="timeline-dot"></span>
+        <div class="exp-logo">
+          <img src="images/NGP-logo.png" alt="NGP College Logo">
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>B.Sc Information Technology</h3>
+            <span class="timeline-badge">2022 - 2025</span>
+          </div>
+          <p class="company-name">Dr. N.G.P Arts and Science College, Coimbatore</p>
+          <ul class="timeline-bullets">
+            <li>Gained foundational and practical knowledge in web development using HTML and CSS, with the ability to build responsive and structured web pages.</li>
+            <li>Developed understanding of machine learning algorithms including Linear Regression, Decision Trees, and XGBoost, with exposure to model building and evaluation techniques.</li>
+            <li>Acquired basic knowledge of databases, including fundamental concepts of data storage, retrieval, and structured query operations (SQL fundamentals).</li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <div class="certificate-image">
-      <img src="images/gcp-badge.png" alt="Google Cloud Certified Professional Cloud Architect Badge" class="badge-img">
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section fade-in" id="blog">
-
-  <h2>BLOG</h2>
-
-  <div class="blog-container">
-
-<div class="blog-card fade-in">
-
-  <div class="blog-img">
-    <img src="images/google-cloud-bigquery.webp" alt="Conversational Analytics in BigQuery">
-  </div>
-
-  <div class="blog-content">
-
-    <h3>Conversational Analytics in BigQuery</h3>
-    <p class="blog-subtitle">An AI-Powered Approach to Data Analysis</p>
-
-    <p>
-      Exploring how conversational AI interfaces are transforming the way
-      we query and analyze data in BigQuery — making analytics more
-      accessible through natural language.
-    </p>
-
-    <a href="Blog/BigQuery-Blog.pdf" target="_blank" class="btn">
-      <i class="fas fa-file-alt"></i> View Blog
-    </a>
-
-  </div>
-
-</div>
-
-</section>
-
-
-  <section class="section fade-in" id="contact">
-
-    <h2>CONTACT ME</h2>
-
-<form id="contactForm" action="https://formspree.io/f/mldadazn" method="POST">
-
-  <input type="text" name="name" placeholder="Your Name" required>
-
-  <input type="email" name="email" placeholder="Your Email" required>
-
-  <textarea name="message" placeholder="Your Message" required></textarea>
-
-  <button type="submit" class="btn send-btn">
-    <span class="btn-text">Send Message</span>
-    <span class="spinner"></span>
-  </button>
-
-</form>
-
-<div class="toast" id="successToast">
-  <div class="toast-check">
-    <i class="fas fa-check"></i>
-  </div>
-  <div class="toast-text">
-    <strong>Message Sent!</strong>
-    <span>Thanks for reaching out — I'll get back to you ASAP.</span>
-  </div>
-  <div class="toast-progress"></div>
-</div>
-
   </section>
 
-<footer>
+  <!-- Certifications Section -->
+  <section class="section fade-in" id="certifications">
+    <h2>CERTIFICATIONS</h2>
 
-  <div class="social-icons">
-    <a href="mailto:winmani2323@gmail.com" target="_blank">
-      <i class="fa-regular fa-envelope"></i>
-    </a>
+    <div class="certifications-container">
+      <div class="cert-card spotlight-card">
+        <div class="certificate-image">
+          <img src="images/aws-badge.png" alt="AWS Certified Cloud Practitioner Badge" class="badge-img">
+        </div>
+        <div class="cert-info">
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p>Amazon Web Services (AWS)</p>
+          <span class="cert-verified"><i class="fas fa-check-circle"></i> Verified Credential</span>
+        </div>
+      </div>
 
-    <a href="https://github.com/winu-git" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
+      <div class="cert-card spotlight-card">
+        <div class="certificate-image">
+          <img src="images/gcp-badge.png" alt="Google Cloud Certified Professional Cloud Architect Badge" class="badge-img">
+        </div>
+        <div class="cert-info">
+          <h3>Professional Cloud Architect</h3>
+          <p>Google Cloud Platform (GCP)</p>
+          <span class="cert-verified"><i class="fas fa-check-circle"></i> Verified Credential</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <a href="https://www.linkedin.com/in/winmaniraja" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
+  <!-- Blog Section -->
+  <section class="section fade-in" id="blog">
+    <h2>BLOG</h2>
+
+    <div class="blog-container">
+      <div class="blog-card spotlight-card fade-in">
+        <div class="blog-img">
+          <img src="images/google-cloud-bigquery.webp" alt="Conversational Analytics in BigQuery">
+        </div>
+
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-tag">Featured Article</span>
+            <span><i class="far fa-clock"></i> 5 min read • BigQuery &amp; AI</span>
+          </div>
+          <h3>Conversational Analytics in BigQuery</h3>
+          <p class="blog-subtitle">An AI-Powered Approach to Data Analysis</p>
+          <p>
+            Exploring how conversational AI interfaces are transforming the way we query and analyze data in BigQuery — making analytics more accessible through natural language.
+          </p>
+          <a href="Blog/BigQuery-Blog.pdf" target="_blank" class="btn">
+            <i class="fas fa-file-alt"></i> Read Full Article
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section fade-in" id="contact">
+    <h2>CONTACT ME</h2>
+
+    <form id="contactForm" class="spotlight-card" action="https://formspree.io/f/mldadazn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn btn-primary send-btn">
+        <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+        <span class="spinner"></span>
+      </button>
+    </form>
+
+    <div class="toast" id="successToast">
+      <div class="toast-check">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="toast-text">
+        <strong>Message Sent!</strong>
+        <span>Thanks for reaching out — I'll get back to you ASAP.</span>
+      </div>
+      <div class="toast-progress"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:winmani2323@gmail.com" target="_blank" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://github.com/winu-git" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/winmaniraja" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+    <div class="footer-terminal">
+      <span class="terminal-user">winu@cloud:~$</span>
+      <span id="terminalCommand"></span>
+      <span class="terminal-cursor">█</span>
+    </div>
+  </footer>
+
+  <!-- Architecture Diagram Modal -->
+  <div class="arch-modal" id="archModal">
+    <div class="arch-modal-content">
+      <button type="button" class="arch-close" id="archClose" aria-label="Close Modal">&times;</button>
+      <h3 id="archModalTitle">Architecture Blueprint</h3>
+      <p id="archModalDesc"></p>
+      <div class="arch-flow" id="archModalFlow"></div>
+    </div>
   </div>
 
-<div class="footer-terminal">
-    <span class="terminal-user">winu@cloud:~$</span>
-    <span id="terminalCommand"></span>
-    <span class="terminal-cursor">█</span>
-</div>
+  <!-- Scroll to Top Button -->
+  <button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-</footer>
+  <!-- Contact Form Submission -->
+  <script>
+    const form = document.querySelector("#contactForm");
+    const toast = document.getElementById("successToast");
+    const sendBtn = document.querySelector(".send-btn");
 
-<script>
-const form = document.querySelector("#contactForm");
-const toast = document.getElementById("successToast");
-const sendBtn = document.querySelector(".send-btn");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      sendBtn.classList.add("loading");
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  sendBtn.classList.add("loading");
+      const data = new FormData(form);
 
-  const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" }
+        });
 
-  const res = await fetch(form.action, {
-    method: "POST",
-    body: data,
-    headers: { Accept: "application/json" }
-  });
+        sendBtn.classList.remove("loading");
 
-  sendBtn.classList.remove("loading");
-
-  if (res.ok) {
-    form.reset();
-    toast.classList.add("show");
-
-    setTimeout(() => {
-      toast.classList.remove("show");
-    }, 4000);
-  } else {
-    alert("Error sending message");
-  }
-});
-</script>
-
-<script>
-(function () {
-  const loaderText = "./launch-portfolio.sh";
-  const loaderTyping = document.getElementById("loaderTyping");
-  const fill = document.querySelector(".thin-fill");
-  let i = 0;
-  
- document.getElementById("headerLogoSvg").classList.add("play");
-
-  function typeLoader() {
-    if (i < loaderText.length) {
-      loaderTyping.textContent += loaderText.charAt(i);
-      i++;
-      setTimeout(typeLoader, 90);
-    } else {
-      const loadingText = document.querySelector(".loading-text");
-      const progressBar = document.querySelector(".thin-progress");
-      loadingText.style.display = "block";
-      progressBar.style.display = "block";
-
-      setTimeout(() => {
-        fill.style.transition = "width 1.2s linear";
-        fill.style.width = "100%";
-      }, 200);
-
-      setTimeout(() => {
-        document.getElementById("intro").classList.add("fade-out");
-      }, 1800);
-    }
-  }
-
-  window.addEventListener("load", typeLoader);
-})();
-</script>
-
-<script>
-(function () {
-  const fadeElements = document.querySelectorAll(".fade-in");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        e.target.classList.toggle("show", e.isIntersecting);
-      });
-    },
-    { threshold: 0.15 }
-  );
-  fadeElements.forEach((el) => observer.observe(el));
-})();
-</script>
-
-<script>
-(function () {
-  const name = "Winmaniraja B";
-  const typingName = document.querySelector(".typing-name");
-  let idx = 0;
-
-  const typeSpeed = 120;     // ms per character while typing
-  const eraseSpeed = 70;     // ms per character while erasing
-  const holdAfterType = 500; // pause after fully typed, before erasing
-  const holdAfterErase = 500; // pause after fully erased, before retyping
-
-  function type() {
-    if (idx < name.length) {
-      typingName.textContent += name.charAt(idx);
-      idx++;
-      setTimeout(type, typeSpeed);
-    } else {
-      setTimeout(erase, holdAfterType);
-    }
-  }
-
-  function erase() {
-    if (idx > 0) {
-      typingName.textContent = name.substring(0, idx - 1);
-      idx--;
-      setTimeout(erase, eraseSpeed);
-    } else {
-      setTimeout(type, holdAfterErase);
-    }
-  }
-
-  const intro = document.getElementById("intro");
-
-  if (intro) {
-    intro.addEventListener("transitionend", function handler() {
-      intro.removeEventListener("transitionend", handler);
-      type();
+        if (res.ok) {
+          form.reset();
+          toast.classList.add("show");
+          setTimeout(() => {
+            toast.classList.remove("show");
+          }, 4000);
+        } else {
+          alert("Error sending message. Please try again.");
+        }
+      } catch (err) {
+        sendBtn.classList.remove("loading");
+        alert("Network error. Please check your connection.");
+      }
     });
-  } else {
-    type();
-  }
-})();
-</script>
+  </script>
 
-<script>
-(function () {
-  const heroLines = [];
-  const heroTerminal = document.getElementById("heroTerminal");
-  let idx = 0;
-  let running = false;
+  <!-- Intro Boot Loader + Skip Button -->
+  <script>
+    (function () {
+      const loaderText = "./launch-portfolio.sh";
+      const loaderTyping = document.getElementById("loaderTyping");
+      const fill = document.querySelector(".thin-fill");
+      const intro = document.getElementById("intro");
+      const skipBtn = document.getElementById("skipIntroBtn");
+      let i = 0;
+      let introDismissed = false;
 
-  function runTerminal() {
-    if (!heroTerminal || running) return;
-    running = true;
+      document.getElementById("headerLogoSvg").classList.add("play");
 
-    function step() {
-      if (idx < heroLines.length) {
-        heroTerminal.innerHTML += heroLines[idx] + "\n";
-        idx++;
-        setTimeout(step, 700);
+      function dismissIntro() {
+        if (introDismissed || !intro) return;
+        introDismissed = true;
+        intro.classList.add("fade-out");
+      }
+
+      if (skipBtn) {
+        skipBtn.addEventListener("click", dismissIntro);
+      }
+
+      function typeLoader() {
+        if (introDismissed) return;
+        if (i < loaderText.length) {
+          loaderTyping.textContent += loaderText.charAt(i);
+          i++;
+          setTimeout(typeLoader, 75);
+        } else {
+          const loadingText = document.querySelector(".loading-text");
+          const progressBar = document.querySelector(".thin-progress");
+          loadingText.style.display = "block";
+          progressBar.style.display = "block";
+
+          setTimeout(() => {
+            fill.style.transition = "width 1.1s linear";
+            fill.style.width = "100%";
+          }, 150);
+
+          setTimeout(dismissIntro, 1550);
+        }
+      }
+
+      window.addEventListener("load", typeLoader);
+    })();
+  </script>
+
+  <!-- Scroll Fade-In & Active Nav Link Highlighting -->
+  <script>
+    (function () {
+      const fadeElements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      fadeElements.forEach((el) => observer.observe(el));
+
+      // Active Nav Link on Scroll
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((sec) => {
+          const sectionTop = sec.offsetTop - 140;
+          if (window.scrollY >= sectionTop) {
+            current = sec.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Mobile Navigation Toggle
+      const mobileToggle = document.getElementById("mobileMenuToggle");
+      const mainNav = document.getElementById("mainNav");
+      if (mobileToggle && mainNav) {
+        mobileToggle.addEventListener("click", () => {
+          mainNav.classList.toggle("open");
+        });
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => mainNav.classList.remove("open"));
+        });
+      }
+    })();
+  </script>
+
+  <!-- Hero Typing Name Effect -->
+  <script>
+    (function () {
+      const name = "Winmaniraja B";
+      const typingName = document.querySelector(".typing-name");
+      let idx = 0;
+      let started = false;
+
+      const typeSpeed = 115;
+      const eraseSpeed = 65;
+      const holdAfterType = 1200;
+      const holdAfterErase = 500;
+
+      function type() {
+        if (idx < name.length) {
+          typingName.textContent += name.charAt(idx);
+          idx++;
+          setTimeout(type, typeSpeed);
+        } else {
+          setTimeout(erase, holdAfterType);
+        }
+      }
+
+      function erase() {
+        if (idx > 0) {
+          typingName.textContent = name.substring(0, idx - 1);
+          idx--;
+          setTimeout(erase, eraseSpeed);
+        } else {
+          setTimeout(type, holdAfterErase);
+        }
+      }
+
+      function startTyping() {
+        if (started) return;
+        started = true;
+        type();
+      }
+
+      const intro = document.getElementById("intro");
+      if (intro) {
+        intro.addEventListener("transitionend", startTyping);
+        setTimeout(startTyping, 3200); // Fallback if skipped quickly
       } else {
-        setTimeout(() => {
-          heroTerminal.innerHTML = "";
-          idx = 0;
-          running = false;
-          runTerminal();
-        }, 2500);
+        startTyping();
       }
-    }
-    step();
-  }
+    })();
+  </script>
 
-  window.addEventListener("load", runTerminal);
-})();
-</script>
+  <!-- Populated Hero CLI Terminal -->
+  <script>
+    (function () {
+      const heroLines = [
+        "$ gcloud compute instances list --filter='status=RUNNING'",
+        "✔ prod-gke-node-01   us-central1-a   RUNNING",
+        "$ kubectl get pods -n production",
+        "✔ api-gateway-7d8f9  1/1 Running     0 restarts",
+        "$ terraform plan -out=tfplan",
+        "✔ No changes. Infrastructure is up-to-date."
+      ];
+      const heroTerminal = document.getElementById("heroTerminal");
+      let idx = 0;
 
-<button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-<script>
-(function () {
-  const topBtn = document.getElementById("topBtn");
-  window.addEventListener("scroll", () => {
-    topBtn.style.display = window.scrollY > 400 ? "flex" : "none";
-  });
-})();
-</script>
-
-<script>
-(function () {
-  function connect(id1, id2, lineId) {
-    const n1 = document.getElementById(id1);
-    const n2 = document.getElementById(id2);
-    const line = document.getElementById(lineId);
-    if (!n1 || !n2 || !line) return;
-
-    const r1 = n1.getBoundingClientRect();
-    const r2 = n2.getBoundingClientRect();
-
-    line.setAttribute("x1", r1.left + r1.width / 2);
-    line.setAttribute("y1", r1.top + r1.height / 2);
-    line.setAttribute("x2", r2.left + r2.width / 2);
-    line.setAttribute("y2", r2.top + r2.height / 2);
-  }
-
-  function updateLines() {
-    connect("n1", "n2", "l1");
-    connect("n2", "n3", "l2");
-    connect("n3", "n4", "l3");
-    connect("n4", "n5", "l4");
-    connect("n5", "n6", "l5");
-  }
-
-  window.addEventListener("resize", updateLines);
-  window.addEventListener("load", updateLines);
-})();
-</script>
-
-<script>
-(function () {
-  const text = " deploy portfolio --production ✔";
-  const terminal = document.getElementById("terminalCommand");
-  let i = 0;
-  let deleting = false;
-
-  function typing() {
-    if (!terminal) return;
-    terminal.textContent = text.substring(0, i);
-
-    if (!deleting) {
-      i++;
-      if (i > text.length) {
-        deleting = true;
-        setTimeout(typing, 2000);
-        return;
+      function step() {
+        if (!heroTerminal) return;
+        if (idx < heroLines.length) {
+          const lineEl = document.createElement("div");
+          lineEl.className = heroLines[idx].startsWith("$") ? "term-cmd" : "term-out";
+          lineEl.textContent = heroLines[idx];
+          heroTerminal.appendChild(lineEl);
+          idx++;
+          setTimeout(step, 750);
+        } else {
+          setTimeout(() => {
+            heroTerminal.innerHTML = "";
+            idx = 0;
+            step();
+          }, 3500);
+        }
       }
-    } else {
-      i--;
-      if (i < 0) {
-        deleting = false;
-        i = 0;
+
+      window.addEventListener("load", step);
+    })();
+  </script>
+
+  <!-- Scroll-to-Top Visibility -->
+  <script>
+    (function () {
+      const topBtn = document.getElementById("topBtn");
+      window.addEventListener("scroll", () => {
+        topBtn.style.display = window.scrollY > 400 ? "flex" : "none";
+      });
+    })();
+  </script>
+
+  <!-- Real-Time Dynamic Network SVG Lines -->
+  <script>
+    (function () {
+      const connections = [
+        ["n1", "n2", "l1"],
+        ["n2", "n3", "l2"],
+        ["n3", "n4", "l3"],
+        ["n4", "n5", "l4"],
+        ["n5", "n6", "l5"],
+        ["n6", "n7", "l6"],
+        ["n7", "n8", "l7"]
+      ];
+
+      function updateLines() {
+        if (window.innerWidth > 768) {
+          connections.forEach(([id1, id2, lineId]) => {
+            const n1 = document.getElementById(id1);
+            const n2 = document.getElementById(id2);
+            const line = document.getElementById(lineId);
+            if (!n1 || !n2 || !line) return;
+
+            const r1 = n1.getBoundingClientRect();
+            const r2 = n2.getBoundingClientRect();
+
+            line.setAttribute("x1", r1.left + r1.width / 2);
+            line.setAttribute("y1", r1.top + r1.height / 2);
+            line.setAttribute("x2", r2.left + r2.width / 2);
+            line.setAttribute("y2", r2.top + r2.height / 2);
+          });
+        }
+        requestAnimationFrame(updateLines);
       }
-    }
-    setTimeout(typing, deleting ? 40 : 90);
-  }
 
-  typing();
-})();
-</script>
+      requestAnimationFrame(updateLines);
+    })();
+  </script>
 
-<script>
-  // Enables :active CSS states on touch devices (iOS Safari fix)
-  document.addEventListener("touchstart", function () {}, false);
-</script>
+  <!-- Cursor Spotlight & Architecture Modal Logic -->
+  <script>
+    (function () {
+      // Mouse-tracking spotlight on cards
+      document.querySelectorAll(".spotlight-card").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+          card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+        });
+      });
 
+      // Architecture Modal Data
+      const architectures = {
+        "three-tier": {
+          title: "Three-Tier AWS Web Architecture",
+          desc: "Isolated VPC with public/private subnets, least-privilege IAM roles, Security Groups, and automated transactional email notifications via AWS SES.",
+          steps: [
+            { icon: "fas fa-users", label: "End Users", sub: "HTTPS Traffic" },
+            { icon: "fas fa-shield-alt", label: "Public Subnet (Web Tier)", sub: "EC2 + Security Groups" },
+            { icon: "fas fa-cogs", label: "Private Subnet (App Tier)", sub: "EC2 App Logic + IAM" },
+            { icon: "fas fa-database", label: "Private Subnet (DB Tier)", sub: "Amazon RDS + AWS SES" }
+          ]
+        },
+        "ai-dr": {
+          title: "Multi-Region AI Chatbot with Disaster Recovery",
+          desc: "Active-Passive multi-region AWS deployment ensuring business continuity, automated database replication, and rapid failover during regional outages.",
+          steps: [
+            { icon: "fas fa-globe", label: "DNS Routing", sub: "Multi-Region Failover" },
+            { icon: "fas fa-server", label: "Primary Region VPC", sub: "EC2 AI Engine + RDS Primary" },
+            { icon: "fas fa-sync-alt", label: "Cross-Region Replication", sub: "Automated Snapshots & Sync" },
+            { icon: "fas fa-life-ring", label: "DR Standby Region", sub: "Warm Standby EC2 + RDS Replica" }
+          ]
+        }
+      };
+
+      const modal = document.getElementById("archModal");
+      const modalTitle = document.getElementById("archModalTitle");
+      const modalDesc = document.getElementById("archModalDesc");
+      const modalFlow = document.getElementById("archModalFlow");
+      const closeBtn = document.getElementById("archClose");
+
+      document.querySelectorAll(".arch-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const key = btn.getAttribute("data-project");
+          const data = architectures[key];
+          if (!data) return;
+
+          modalTitle.textContent = data.title;
+          modalDesc.textContent = data.desc;
+          modalFlow.innerHTML = data.steps
+            .map(
+              (s, index) => `
+              <div class="arch-step">
+                <i class="${s.icon}"></i>
+                <strong>${s.label}</strong>
+                <span>${s.sub}</span>
+              </div>
+              ${index < data.steps.length - 1 ? '<div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>' : ""}
+            `
+            )
+            .join("");
+
+          modal.classList.add("open");
+        });
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", () => modal.classList.remove("open"));
+      }
+      if (modal) {
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) modal.classList.remove("open");
+        });
+      }
+    })();
+  </script>
+
+  <!-- Footer Terminal Typing -->
+  <script>
+    (function () {
+      const text = "deploy portfolio --production ✔";
+      const terminal = document.getElementById("terminalCommand");
+      let i = 0;
+      let deleting = false;
+
+      function typing() {
+        if (!terminal) return;
+        terminal.textContent = text.substring(0, i);
+
+        if (!deleting) {
+          i++;
+          if (i > text.length) {
+            deleting = true;
+            setTimeout(typing, 2000);
+            return;
+          }
+        } else {
+          i--;
+          if (i < 0) {
+            deleting = false;
+            i = 0;
+          }
+        }
+        setTimeout(typing, deleting ? 40 : 90);
+      }
+
+      typing();
+    })();
+  </script>
+
+  <script>
+    document.addEventListener("touchstart", function () {}, false);
+  </script>
 </body>
 </html>
