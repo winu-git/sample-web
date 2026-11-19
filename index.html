@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Winu Portfolio | Cloud & DevOps Engineer</title>
+  <title>Winu Portfolio | Cloud &amp; DevOps Engineer</title>
 
-  <link rel="icon" type="image/png" href="images/title-logo-3.jpg">
+  <link rel="icon" type="image/png" href="images/w.jpeg">
   <link rel="stylesheet" href="style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
 </head>
 <body id="top">
 
-  <!-- Dynamic Floating Cloud/DevOps Network -->
+  <!-- Subtle Faded Floating Cloud/DevOps Network -->
   <div class="floating-network">
     <div class="node" id="n1"><img src="images/aws-logo-1.png" alt="AWS"></div>
     <div class="node" id="n2"><img src="images/GCP-icon.png" alt="GCP"></div>
@@ -51,8 +51,6 @@
       <div class="thin-progress">
         <span class="thin-fill"></span>
       </div>
-
-      <button type="button" class="skip-intro-btn" id="skipIntroBtn">Skip Intro →</button>
     </div>
   </div>
 
@@ -112,7 +110,7 @@
     <div class="hero-text">
       <div class="status-pill">
         <span class="pulse-dot"></span>
-        <span>GCP Technical Engineer @ Quadrasystems</span>
+        <span>Google Cloud Engineer at Quadrasystems</span>
       </div>
 
       <h1 class="hero-title">
@@ -133,17 +131,14 @@
         <a href="winmani-resume.pdf" class="btn" target="_blank">
           <i class="fas fa-file-alt"></i> Resume
         </a>
-      </div>
-
-      <!-- Live CLI Terminal Card -->
-      <div class="hero-terminal-box">
-        <div class="terminal-header">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="terminal-title">winu@cloud-prod: ~</span>
-        </div>
-        <div class="hero-terminal" id="heroTerminal"></div>
+        <button type="button" class="btn btn-winu-ai" id="heroAskAiBtn">
+          <svg class="winu-ai-svg" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" aria-label="W1NU AI">
+            <text x="8" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">W1NU</text>
+            <text x="192" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">AI</text>
+            <path d="M 105 64 C 135 76, 185 45, 178 18 C 174 5, 155 8, 146 16" fill="none" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span></span>
+        </button>
       </div>
     </div>
 
@@ -154,10 +149,10 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section (Clean Borderless Typography Only) -->
   <section class="section fade-in" id="about">
     <h2>ABOUT ME</h2>
-    <div class="about-card spotlight-card">
+    <div class="about-text-only">
       <p>
         ☁️ Aspiring Cloud and DevOps professional with a strong foundation in cloud computing, Linux, networking, automation, and Infrastructure as Code (IaC). Officially Certified in AWS and Google Cloud, with hands-on experience working with AWS, Google Cloud Platform (GCP), Docker, Kubernetes, Terraform, Git, and CI/CD through practical implementations and projects. Focused on designing, automating, and maintaining scalable, secure, and reliable cloud infrastructure using modern DevOps practices. Interested in cloud architecture, infrastructure automation, containerization, CI/CD, and multi-cloud solutions. Continuously exploring emerging technologies across cloud computing, DevOps, automation, and AI, with a focus on building efficient, reliable, and production-ready infrastructure.
       </p>
@@ -168,60 +163,60 @@
   <section class="section fade-in" id="tech-stack">
     <h2>TECH STACK</h2>
 
-    <div class="tech-grid">
-      <div class="tech-item spotlight-card">
+    <div class="tech-grid" id="techGrid">
+      <div class="tech-item spotlight-card" data-tip="EC2, S3, VPC, RDS, IAM, Lambda & SES architectures">
         <img src="images/aws-logo-1.png" alt="AWS">
         <span>AWS</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Compute Engine, GKE, Cloud Storage, BigQuery & IAM">
         <img src="images/GCP-icon.png" alt="Google Cloud">
         <span>GCP</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Multi-stage container builds & microservice packaging">
         <img src="images/docker.png" alt="Docker">
         <span>Docker</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Cluster orchestration, autoscaling & GKE/EKS workloads">
         <img src="images/Kubernetes.png" alt="Kubernetes">
         <span>Kubernetes</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Automated build, test & zero-downtime deployment pipelines">
         <img src="images/Jenkins.png" alt="Jenkins">
         <span>Jenkins</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Server hardening, shell scripting & systemd administration">
         <img src="images/Linux.png" alt="Linux">
         <span>Linux</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Declarative Infrastructure as Code across AWS & GCP">
         <img src="images/Terraform.png" alt="Terraform">
         <span>Terraform</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Continuous integration & automated release workflows">
         <img src="images/CI-CD.png" alt="CI/CD">
         <span>CI/CD</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Distributed version control & branching strategies">
         <img src="images/git.png" alt="Git">
         <span>Git</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Source repositories, webhooks & GitHub Actions">
         <img src="images/github-white-icon.webp" alt="GitHub">
         <span>GitHub</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Real-time metrics scraping & threshold alerting rules">
         <img src="images/Prometheus.png" alt="Prometheus">
         <span>Prometheus</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Observability dashboards & infrastructure SLA tracking">
         <img src="images/Grafana.png" alt="Grafana">
         <span>Grafana</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Semantic, accessible web structure & responsive UI">
         <img src="images/html.png" alt="HTML5">
         <span>HTML5</span>
       </div>
-      <div class="tech-item spotlight-card">
+      <div class="tech-item spotlight-card" data-tip="Modern layouts, animations & glassmorphic interfaces">
         <img src="images/css.png" alt="CSS3">
         <span>CSS3</span>
       </div>
@@ -239,7 +234,7 @@
         <div class="skill-top">
           <div class="cloud-brand aws-brand">
             <img src="images/aws-logo-1.png" alt="AWS">
-            <h3>AWS</h3>
+            <h3></h3>
           </div>
 
           <div class="brand-divider"></div>
@@ -346,7 +341,7 @@
 
       <div class="project-card spotlight-card fade-in">
         <div class="project-img">
-          <img src="images/winuAI.png" alt="AI Chatbot">
+          <img src="images/winu-ai-1.jpeg" alt="AI Chatbot">
         </div>
 
         <div class="project-content">
@@ -527,41 +522,118 @@
       </div>
       <div class="toast-text">
         <strong>Message Sent!</strong>
-        <span>Thanks for reaching out — I'll get back to you ASAP.</span>
+        <span>Thanks for reaching out Me! — I'll get back to you ASAP.</span>
       </div>
       <div class="toast-progress"></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:winmani2323@gmail.com" target="_blank" aria-label="Email">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-      <a href="https://github.com/winu-git" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/winmaniraja" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
+  <!-- Professional Cloud Architect Footer -->
+  <footer class="pro-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo">Winmaniraja B</a>
+        <p>Cloud &amp; DevOps Engineer specializing in AWS, Google Cloud Platform, Kubernetes, and Infrastructure as Code.</p>
+        <div class="footer-availability">
+          <span class="pulse-dot"></span>
+          <span>Coimbatore, Tamilnadu, India</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="mailto:winmani2323@gmail.com" target="_blank" aria-label="Email" title="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://github.com/winu-git" target="_blank" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/winmaniraja" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        </a>
+      </div>
     </div>
 
-    <div class="footer-terminal">
-      <span class="terminal-user">winu@cloud:~$</span>
-      <span id="terminalCommand"></span>
-      <span class="terminal-cursor">█</span>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> Winmaniraja B. Engineered for Scale &amp; High Availability.</p>
+      <span class="footer-region"><i class="fas fa-shield-alt"></i> Multi-Cloud Architecture</span>
     </div>
   </footer>
 
-  <!-- Architecture Diagram Modal -->
+  <!-- Animated Architecture Blueprint Modal -->
   <div class="arch-modal" id="archModal">
     <div class="arch-modal-content">
       <button type="button" class="arch-close" id="archClose" aria-label="Close Modal">&times;</button>
+      <div class="arch-header-bar">
+        <span class="arch-live-badge"><span class="pulse-dot"></span> LIVE ARCHITECTURE SIMULATION</span>
+        <button type="button" class="arch-replay-btn" id="archReplayBtn"><i class="fas fa-redo"></i> Replay Flow</button>
+      </div>
       <h3 id="archModalTitle">Architecture Blueprint</h3>
       <p id="archModalDesc"></p>
       <div class="arch-flow" id="archModalFlow"></div>
+      <div class="arch-telemetry-footer" id="archTelemetryFooter"></div>
     </div>
+  </div>
+
+  <!-- Compact ChatGPT / Gemini-Style AI Assistant Widget (Ctrl + K) -->
+  <button type="button" class="ai-orb-btn" id="aiOrbBtn" aria-label="Chat with W1NU AI" title="Friendly Talk with W1NU AI (Ctrl+K)">
+    <svg class="winu-ai-svg orb-svg" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" aria-label="W1NU AI">
+      <text x="8" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">W1NU</text>
+      <text x="192" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">AI</text>
+      <path d="M 105 64 C 135 76, 185 45, 178 18 C 174 5, 155 8, 146 16" fill="none" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <div class="ai-drawer" id="aiDrawer">
+    <div class="ai-drawer-header">
+      <div class="ai-title">
+        <svg class="winu-ai-svg drawer-svg" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" aria-label="W1NU AI">
+          <text x="8" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">W1NU</text>
+          <text x="192" y="54" fill="#ffffff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="38" letter-spacing="2">AI</text>
+          <path d="M 105 64 C 135 76, 185 45, 178 18 C 174 5, 155 8, 146 16" fill="none" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round"/>
+        </svg>
+        <span class="ai-model-badge"><span class="mode-dot"></span> Friendly Mode</span>
+      </div>
+      <div class="ai-header-actions">
+        <button type="button" class="ai-icon-btn" id="aiClearBtn" title="New Chat" aria-label="New Chat">
+          <i class="fas fa-rotate-right"></i>
+        </button>
+        <button type="button" class="ai-icon-btn" id="aiClose" title="Close" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="ai-messages" id="aiMessages"></div>
+
+    <div class="ai-prompts" id="aiPrompts">
+      <button type="button" class="ai-chip" data-q="What is your biggest dream?">🎬</button>
+      <button type="button" class="ai-chip" data-q="What are your hobbies?">🎵</button>
+      <button type="button" class="ai-chip" data-q="What is your favorite food and movie?">🥞 Dosa &amp; Movies</button>
+      <button type="button" class="ai-chip" data-q="Tell me a fun fact about you">😄</button>
+      <button type="button" class="ai-chip" data-q="Tell me about your cloud experience">☁️</button>
+    </div>
+
+    <form class="ai-input-row" id="aiForm">
+      <input type="text" id="aiInput" placeholder="Ask Winu anything..." autocomplete="off" />
+      <button type="submit" id="aiSendBtn" aria-label="Send Message">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </form>
   </div>
 
   <!-- Scroll to Top Button -->
@@ -606,31 +678,18 @@
     });
   </script>
 
-  <!-- Intro Boot Loader + Skip Button -->
+  <!-- Intro Boot Loader -->
   <script>
     (function () {
       const loaderText = "./launch-portfolio.sh";
       const loaderTyping = document.getElementById("loaderTyping");
       const fill = document.querySelector(".thin-fill");
       const intro = document.getElementById("intro");
-      const skipBtn = document.getElementById("skipIntroBtn");
       let i = 0;
-      let introDismissed = false;
 
       document.getElementById("headerLogoSvg").classList.add("play");
 
-      function dismissIntro() {
-        if (introDismissed || !intro) return;
-        introDismissed = true;
-        intro.classList.add("fade-out");
-      }
-
-      if (skipBtn) {
-        skipBtn.addEventListener("click", dismissIntro);
-      }
-
       function typeLoader() {
-        if (introDismissed) return;
         if (i < loaderText.length) {
           loaderTyping.textContent += loaderText.charAt(i);
           i++;
@@ -646,7 +705,9 @@
             fill.style.width = "100%";
           }, 150);
 
-          setTimeout(dismissIntro, 1550);
+          setTimeout(() => {
+            if (intro) intro.classList.add("fade-out");
+          }, 1550);
         }
       }
 
@@ -670,7 +731,6 @@
       );
       fadeElements.forEach((el) => observer.observe(el));
 
-      // Active Nav Link on Scroll
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".nav-link");
 
@@ -691,7 +751,6 @@
         });
       });
 
-      // Mobile Navigation Toggle
       const mobileToggle = document.getElementById("mobileMenuToggle");
       const mainNav = document.getElementById("mainNav");
       if (mobileToggle && mainNav) {
@@ -702,6 +761,10 @@
           link.addEventListener("click", () => mainNav.classList.remove("open"));
         });
       }
+
+      // Dynamic Footer Year
+      const yearEl = document.getElementById("currentYear");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
     })();
   </script>
 
@@ -747,46 +810,9 @@
       const intro = document.getElementById("intro");
       if (intro) {
         intro.addEventListener("transitionend", startTyping);
-        setTimeout(startTyping, 3200); // Fallback if skipped quickly
       } else {
         startTyping();
       }
-    })();
-  </script>
-
-  <!-- Populated Hero CLI Terminal -->
-  <script>
-    (function () {
-      const heroLines = [
-        "$ gcloud compute instances list --filter='status=RUNNING'",
-        "✔ prod-gke-node-01   us-central1-a   RUNNING",
-        "$ kubectl get pods -n production",
-        "✔ api-gateway-7d8f9  1/1 Running     0 restarts",
-        "$ terraform plan -out=tfplan",
-        "✔ No changes. Infrastructure is up-to-date."
-      ];
-      const heroTerminal = document.getElementById("heroTerminal");
-      let idx = 0;
-
-      function step() {
-        if (!heroTerminal) return;
-        if (idx < heroLines.length) {
-          const lineEl = document.createElement("div");
-          lineEl.className = heroLines[idx].startsWith("$") ? "term-cmd" : "term-out";
-          lineEl.textContent = heroLines[idx];
-          heroTerminal.appendChild(lineEl);
-          idx++;
-          setTimeout(step, 750);
-        } else {
-          setTimeout(() => {
-            heroTerminal.innerHTML = "";
-            idx = 0;
-            step();
-          }, 3500);
-        }
-      }
-
-      window.addEventListener("load", step);
     })();
   </script>
 
@@ -837,10 +863,10 @@
     })();
   </script>
 
-  <!-- Cursor Spotlight & Architecture Modal Logic -->
+  <!-- Cursor Spotlight, Animated Architecture Modal & W1NU AI Assistant -->
   <script>
     (function () {
-      // Mouse-tracking spotlight on cards
+      // 1. Mouse-tracking spotlight on cards
       document.querySelectorAll(".spotlight-card").forEach((card) => {
         card.addEventListener("mousemove", (e) => {
           const rect = card.getBoundingClientRect();
@@ -849,26 +875,28 @@
         });
       });
 
-      // Architecture Modal Data
+      // 2. Animated Architecture Modal Data & Staggered Flow Engine
       const architectures = {
         "three-tier": {
           title: "Three-Tier AWS Web Architecture",
           desc: "Isolated VPC with public/private subnets, least-privilege IAM roles, Security Groups, and automated transactional email notifications via AWS SES.",
+          telemetry: "Security: Least-Privilege IAM • Subnets: Public/Private Isolation • Notifications: AWS SES Triggered",
           steps: [
-            { icon: "fas fa-users", label: "End Users", sub: "HTTPS Traffic" },
-            { icon: "fas fa-shield-alt", label: "Public Subnet (Web Tier)", sub: "EC2 + Security Groups" },
-            { icon: "fas fa-cogs", label: "Private Subnet (App Tier)", sub: "EC2 App Logic + IAM" },
-            { icon: "fas fa-database", label: "Private Subnet (DB Tier)", sub: "Amazon RDS + AWS SES" }
+            { icon: "fas fa-users", label: "End Users", sub: "HTTPS Request" },
+            { icon: "fas fa-shield-alt", label: "Public Subnet", sub: "Web Tier + SG" },
+            { icon: "fas fa-cogs", label: "Private Subnet", sub: "EC2 App + IAM" },
+            { icon: "fas fa-database", label: "Database & SES", sub: "RDS + Email Confirm" }
           ]
         },
         "ai-dr": {
           title: "Multi-Region AI Chatbot with Disaster Recovery",
           desc: "Active-Passive multi-region AWS deployment ensuring business continuity, automated database replication, and rapid failover during regional outages.",
+          telemetry: "Topology: Multi-Region Active-Passive • Replication: Automated RDS Sync • High Availability: Enabled",
           steps: [
-            { icon: "fas fa-globe", label: "DNS Routing", sub: "Multi-Region Failover" },
-            { icon: "fas fa-server", label: "Primary Region VPC", sub: "EC2 AI Engine + RDS Primary" },
-            { icon: "fas fa-sync-alt", label: "Cross-Region Replication", sub: "Automated Snapshots & Sync" },
-            { icon: "fas fa-life-ring", label: "DR Standby Region", sub: "Warm Standby EC2 + RDS Replica" }
+            { icon: "fas fa-globe", label: "Global Routing", sub: "Health Check DNS" },
+            { icon: "fas fa-server", label: "Primary Region", sub: "EC2 AI + RDS Primary" },
+            { icon: "fas fa-sync-alt", label: "Cross-Region Sync", sub: "Automated Replication" },
+            { icon: "fas fa-life-ring", label: "DR Standby Region", sub: "Warm Failover Ready" }
           ]
         }
       };
@@ -877,74 +905,282 @@
       const modalTitle = document.getElementById("archModalTitle");
       const modalDesc = document.getElementById("archModalDesc");
       const modalFlow = document.getElementById("archModalFlow");
+      const telemetryFooter = document.getElementById("archTelemetryFooter");
       const closeBtn = document.getElementById("archClose");
+      const replayBtn = document.getElementById("archReplayBtn");
+      let currentProjectKey = null;
+
+      function renderAnimatedArchitecture(key) {
+        const data = architectures[key];
+        if (!data) return;
+        currentProjectKey = key;
+
+        modalTitle.textContent = data.title;
+        modalDesc.textContent = data.desc;
+        telemetryFooter.innerHTML = `<i class="fas fa-check-circle"></i> ${data.telemetry}`;
+
+        modalFlow.innerHTML = data.steps
+          .map(
+            (s, index) => `
+            <div class="arch-step" style="--step-delay: ${index * 220}ms;">
+              <div class="step-pulse-ring"></div>
+              <i class="${s.icon}"></i>
+              <strong>${s.label}</strong>
+              <span>${s.sub}</span>
+            </div>
+            ${
+              index < data.steps.length - 1
+                ? `<div class="arch-arrow" style="--arrow-delay: ${index * 220 + 110}ms;">
+                     <span class="packet-dot"></span>
+                     <i class="fas fa-chevron-right"></i>
+                   </div>`
+                : ""
+            }
+          `
+          )
+          .join("");
+
+        modal.classList.add("open");
+
+        // Trigger staggered entrance animation
+        requestAnimationFrame(() => {
+          modalFlow.querySelectorAll(".arch-step, .arch-arrow").forEach((el) => {
+            el.classList.add("animate-in");
+          });
+        });
+      }
 
       document.querySelectorAll(".arch-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
-          const key = btn.getAttribute("data-project");
-          const data = architectures[key];
-          if (!data) return;
-
-          modalTitle.textContent = data.title;
-          modalDesc.textContent = data.desc;
-          modalFlow.innerHTML = data.steps
-            .map(
-              (s, index) => `
-              <div class="arch-step">
-                <i class="${s.icon}"></i>
-                <strong>${s.label}</strong>
-                <span>${s.sub}</span>
-              </div>
-              ${index < data.steps.length - 1 ? '<div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>' : ""}
-            `
-            )
-            .join("");
-
-          modal.classList.add("open");
+          renderAnimatedArchitecture(btn.getAttribute("data-project"));
         });
       });
 
-      if (closeBtn) {
-        closeBtn.addEventListener("click", () => modal.classList.remove("open"));
-      }
+      replayBtn?.addEventListener("click", () => {
+        if (currentProjectKey) {
+          modalFlow.innerHTML = "";
+          setTimeout(() => renderAnimatedArchitecture(currentProjectKey), 60);
+        }
+      });
+
+      if (closeBtn) closeBtn.addEventListener("click", () => modal.classList.remove("open"));
       if (modal) {
         modal.addEventListener("click", (e) => {
           if (e.target === modal) modal.classList.remove("open");
         });
       }
-    })();
-  </script>
 
-  <!-- Footer Terminal Typing -->
-  <script>
-    (function () {
-      const text = "deploy portfolio --production ✔";
-      const terminal = document.getElementById("terminalCommand");
-      let i = 0;
-      let deleting = false;
+      // 3. W1NU AI Friendly Assistant (Pure Client-Side, Zero Backend)
+      const aiOrbBtn = document.getElementById("aiOrbBtn");
+      const heroAskAiBtn = document.getElementById("heroAskAiBtn");
+      const aiDrawer = document.getElementById("aiDrawer");
+      const aiClose = document.getElementById("aiClose");
+      const aiClearBtn = document.getElementById("aiClearBtn");
+      const aiMessages = document.getElementById("aiMessages");
+      const aiForm = document.getElementById("aiForm");
+      const aiInput = document.getElementById("aiInput");
+      let isStreaming = false;
 
-      function typing() {
-        if (!terminal) return;
-        terminal.textContent = text.substring(0, i);
+      const welcomeHTML = `Hey there! 👋 I'm <strong>W1NU AI</strong>.<br>Ask me anything—about my <strong>Film Director dream</strong>, <strong>crispy Dosa &amp; Tamil cinema</strong>, <strong>travel &amp; music</strong>, or my <strong>AWS &amp; GCP Cloud work</strong>!`;
 
-        if (!deleting) {
-          i++;
-          if (i > text.length) {
-            deleting = true;
-            setTimeout(typing, 2000);
-            return;
-          }
-        } else {
-          i--;
-          if (i < 0) {
-            deleting = false;
-            i = 0;
-          }
-        }
-        setTimeout(typing, deleting ? 40 : 90);
+      function resetChat() {
+        aiMessages.innerHTML = "";
+        addBotBubble(welcomeHTML, false);
       }
 
-      typing();
+      function toggleAiDrawer(forceOpen) {
+        if (!aiDrawer) return;
+        const shouldOpen = typeof forceOpen === "boolean" ? forceOpen : !aiDrawer.classList.contains("open");
+        aiDrawer.classList.toggle("open", shouldOpen);
+        if (shouldOpen && aiInput) setTimeout(() => aiInput.focus(), 150);
+      }
+
+      aiOrbBtn?.addEventListener("click", () => toggleAiDrawer());
+      heroAskAiBtn?.addEventListener("click", () => toggleAiDrawer(true));
+      aiClose?.addEventListener("click", () => toggleAiDrawer(false));
+      aiClearBtn?.addEventListener("click", resetChat);
+
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+          e.preventDefault();
+          toggleAiDrawer();
+        }
+        if (e.key === "Escape") {
+          toggleAiDrawer(false);
+          modal?.classList.remove("open");
+        }
+      });
+
+      const knowledgeBase = [
+        {
+          keywords: ["dream", "motto", "goal", "director", "film", "cinema", "future", "ambition", "passion"],
+          reply: "🎬 <strong>My Big Dream &amp; Life Motto:</strong><br>\"Architecting scalable systems by day, dreaming of directing cinema by night!\"<br><br>My ultimate dream is to become a <strong>Film Director</strong> while continuing to innovate in <strong>Cloud &amp; AI</strong>. Both directing a movie and designing cloud architecture require vision, storytelling, and bringing complex pieces together seamlessly!"
+        },
+        {
+          keywords: ["hobby", "hobbies", "free time", "weekend", "travel", "travelling", "music", "song", "songs", "relax"],
+          reply: "🎵✈️ <strong>Hobbies &amp; Off-Clock Vibes:</strong><br>When I step away from cloud terminals, I love <strong>traveling</strong> to explore new places and listening to <strong>music</strong>—it's my favorite way to recharge and spark creative ideas for both tech and filmmaking."
+        },
+        {
+          keywords: ["food", "dosa", "eat", "dish", "hungry", "snack", "breakfast", "favorite", "fav"],
+          reply: "🥞🎬 <strong>My All-Time Favorites:</strong><br>• <strong>Favorite Food:</strong> Crispy <strong>Dosa</strong> (nothing beats a hot dosa with chutney and sambar!)<br>• <strong>Favorite Movies:</strong> <strong>Tamil movies</strong>—I love analyzing great screenplays, cinematography, and background scores.<br>• <strong>Favorite Tech:</strong> <strong>AWS, GCP, Docker &amp; Kubernetes</strong>."
+        },
+        {
+          keywords: ["movie", "movies", "tamil", "kollywood", "watch", "series"],
+          reply: "🍿 <strong>Favorite Cinema:</strong><br>I'm a huge fan of <strong>Tamil movies</strong>! Watching great storytelling and direction is what inspired my dream of becoming a Film Director one day."
+        },
+        {
+          keywords: ["funny", "fun", "fact", "personality", "entertainer", "joke", "vibe", "character", "who are you", "about you", "yourself"],
+          reply: "😄 <strong>Fun Fact About Me:</strong><br>Behind all the serious Kubernetes clusters and Terraform scripts, I'm a total <strong>entertainer</strong>! I love cracking jokes, keeping the energy light, and making people laugh—whether we're debugging a production server or hanging out with friends."
+        },
+        {
+          keywords: ["aws", "gcp", "docker", "k8s", "kubernetes", "tech", "stack", "tool", "terraform", "devops", "cloud"],
+          reply: "☁️⚙️ <strong>Favorite Tech &amp; DevOps Stack:</strong><br>My absolute favorites are <strong>AWS, GCP, Docker, and Kubernetes (K8s)</strong>—alongside Terraform, Jenkins, Ansible, Git, Prometheus, and Grafana for building self-healing, automated cloud infrastructure."
+        },
+        {
+          keywords: ["cert", "certified", "certification", "badge", "exam"],
+          reply: "🏅 <strong>Official Cloud Certifications:</strong><br>• <strong>AWS Certified Cloud Practitioner</strong><br>• <strong>Google Cloud Certified Professional Cloud Architect</strong>"
+        },
+        {
+          keywords: ["experience", "job", "role", "quadra", "quadrasystems", "company", "work", "working"],
+          reply: "💼 <strong>Current Role:</strong><br>I work as a <strong>GCP Technical Engineer (Google SBU)</strong> at <strong>Quadrasystems.net India Pvt Ltd</strong> (2026 – Present), managing Compute Engine, GKE, Cloud Storage, VPC, IAM, Billing &amp; Cloud Monitoring."
+        },
+        {
+          keywords: ["project", "projects", "tier", "booking", "bot", "chatbot", "disaster", "recovery"],
+          reply: "🚀 <strong>Featured Cloud Projects:</strong><br>1. <strong>Three-Tier Movie Booking Website</strong> (fitting for a future film director! Built with AWS EC2, RDS, VPC, IAM &amp; SES).<br>2. <strong>AI Chatbot with Disaster Recovery</strong> across multiple AWS regions for high availability."
+        },
+        {
+          keywords: ["education", "college", "degree", "bsc", "ngp", "fita", "study", "coimbatore"],
+          reply: "🎓 <strong>Education &amp; Training:</strong><br>• <strong>B.Sc Information Technology</strong> — Dr. N.G.P Arts and Science College, Coimbatore (2022–2025)<br>• <strong>AWS &amp; DevOps Training</strong> — FITA Academy (2025)"
+        },
+        {
+          keywords: ["email", "contact", "hire", "reach", "linkedin", "github", "number", "connect"],
+          reply: "📬 <strong>Let's Connect!</strong><br>I've copied <strong>winmani2323@gmail.com</strong> to your clipboard! You can also reach me on <a href='https://www.linkedin.com/in/winmaniraja' target='_blank' style='color:#00ff88;'>LinkedIn</a>, <a href='https://github.com/winu-git' target='_blank' style='color:#00ff88;'>GitHub</a>, or drop a message in the Contact section below."
+        }
+      ];
+
+      function findBestAnswer(input) {
+        const clean = input.toLowerCase();
+        if (/^(hi|hello|hey|vanakkam|yo|sup)\b/.test(clean)) {
+          return "Vanakkam &amp; Hello! 👋 Great to meet you! Want to hear about my <strong>Film Director dream</strong>, my love for <strong>Dosa &amp; Tamil cinema</strong>, or my <strong>AWS &amp; GCP Cloud projects</strong>?";
+        }
+        if (clean.includes("email") || clean.includes("contact") || clean.includes("hire")) {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText("winmani2323@gmail.com").catch(() => {});
+          }
+        }
+
+        let bestMatch = null;
+        let maxScore = 0;
+
+        knowledgeBase.forEach((entry) => {
+          let score = 0;
+          entry.keywords.forEach((kw) => {
+            if (clean.includes(kw)) {
+              score += kw.length > 4 ? 2 : 1;
+            }
+          });
+          if (score > maxScore) {
+            maxScore = score;
+            bestMatch = entry.reply;
+          }
+        });
+
+        if (bestMatch) return bestMatch;
+
+        return "😄 Haha, you caught me off-script! Even as a funny entertainer and Cloud Engineer, I might need Winu himself to answer that one.<br><br>Ask me about my <strong>Film Director dream</strong>, <strong>Hobbies (Travel &amp; Music)</strong>, <strong>Favorite Food (Dosa) &amp; Tamil Movies</strong>, or my <strong>AWS/GCP Cloud &amp; DevOps work</strong>!";
+      }
+
+      function addUserBubble(text) {
+        const row = document.createElement("div");
+        row.className = "ai-row user";
+        row.innerHTML = `<div class="ai-msg user">${text.replace(/</g, "&lt;")}</div>`;
+        aiMessages.appendChild(row);
+        aiMessages.scrollTop = aiMessages.scrollHeight;
+      }
+
+      function addBotBubble(htmlContent, stream = true) {
+        const row = document.createElement("div");
+        row.className = "ai-row bot";
+
+        const badge = document.createElement("div");
+        badge.className = "ai-mini-icon";
+        badge.textContent = "W1";
+
+        const bubble = document.createElement("div");
+        bubble.className = "ai-msg bot";
+
+        const textWrap = document.createElement("div");
+        textWrap.className = "ai-msg-content";
+        bubble.appendChild(textWrap);
+
+        const copyBtn = document.createElement("button");
+        copyBtn.type = "button";
+        copyBtn.className = "ai-copy-btn";
+        copyBtn.title = "Copy response";
+        copyBtn.innerHTML = '<i class="far fa-copy"></i>';
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard?.writeText(textWrap.innerText);
+          copyBtn.innerHTML = '<i class="fas fa-check" style="color:#00ff88;"></i>';
+          setTimeout(() => (copyBtn.innerHTML = '<i class="far fa-copy"></i>'), 1500);
+        });
+        bubble.appendChild(copyBtn);
+
+        row.appendChild(badge);
+        row.appendChild(bubble);
+        aiMessages.appendChild(row);
+
+        if (!stream) {
+          textWrap.innerHTML = htmlContent;
+          aiMessages.scrollTop = aiMessages.scrollHeight;
+          return;
+        }
+
+        isStreaming = true;
+        textWrap.innerHTML = `<span class="thinking-dots"><span></span><span></span><span></span></span>`;
+        aiMessages.scrollTop = aiMessages.scrollHeight;
+
+        setTimeout(() => {
+          const tokens = htmlContent.match(/(<[^>]+>|[^<\s]+|\s+)/g) || [htmlContent];
+          let idx = 0;
+          textWrap.innerHTML = "";
+
+          function streamNext() {
+            if (idx < tokens.length) {
+              textWrap.innerHTML += tokens[idx];
+              idx++;
+              aiMessages.scrollTop = aiMessages.scrollHeight;
+              setTimeout(streamNext, 22);
+            } else {
+              isStreaming = false;
+            }
+          }
+          streamNext();
+        }, 420);
+      }
+
+      function handleUserPrompt(promptText) {
+        if (!promptText.trim() || isStreaming) return;
+        addUserBubble(promptText);
+        const reply = findBestAnswer(promptText);
+        addBotBubble(reply, true);
+      }
+
+      document.querySelectorAll(".ai-chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          const q = chip.getAttribute("data-q") || chip.textContent;
+          handleUserPrompt(q);
+        });
+      });
+
+      aiForm?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const val = aiInput.value.trim();
+        if (!val || isStreaming) return;
+        aiInput.value = "";
+        handleUserPrompt(val);
+      });
+
+      resetChat();
     })();
   </script>
 
